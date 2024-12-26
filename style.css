@@ -1,0 +1,17 @@
+body{
+    stroke-width: 0%;
+    padding: 0%;
+    background-attachment: scroll;
+    background-color: white;
+    
+
+}
+.nav{
+    display: block;
+    padding:  20px;
+    box-shadow:20px;
+    background-color: black;
+    width: 20px;
+    margin: auto;
+
+}
