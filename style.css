@@ -6,12 +6,24 @@ body{
     
 
 }
-.nav{
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
     display: block;
-    padding:  20px;
-    box-shadow:20px;
-    background-color: black;
-    width: 20px;
-    margin: auto;
-
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.search-bar{
+    box-shadow: bisque;
+    border-radius: 5px;
+    align-content: center;
 }
