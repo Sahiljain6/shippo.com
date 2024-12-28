@@ -7,8 +7,9 @@ body{
 
 }
 .navbar {
-    background-color: rgba(0, 0, 0, 0.7);
     overflow: hidden;
+    background-color: #333;
+    padding: 10px 0;
 }
 .navbar a {
     float: left;
@@ -22,8 +23,26 @@ body{
     background-color: #ddd;
     color: black;
 }
-.search-bar{
+.search-container {
     box-shadow: bisque;
     border-radius: 5px;
     align-content: center;
+}
+
+.logo-container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.navbar input[type="text"] {
+    float: left;
+    padding: 14px 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
 }
