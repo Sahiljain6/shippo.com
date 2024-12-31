@@ -1,100 +1,124 @@
+/* Container for the header, logo, and search bar */
 .header-container {
-    display: flex;
-    align-items: center;
-    background-color: #333;
-    padding: 10px;
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Dark background color */
+    padding: 10px; /* Padding around the container */
 }
 
+/* Container for the logo */
 .logo-container {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    margin-right: 20px; /* Space to the right of the logo */
 }
 
+/* Logo styling */
 .logo {
-    width: 100px;
-    height: auto;
+    width: 100px; /* Set logo width */
+    height: auto; /* Maintain aspect ratio */
 }
 
+/* Container for the header text */
 .header {
-    display: flex;
-    align-items: center;
-    color: #f2f2f2;
-    margin-right: 20px;
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    color: #f2f2f2; /* Light text color */
+    margin-right: 20px; /* Space to the right of the header */
 }
 
+/* Header text styling */
 .header h1 {
-    margin: 0;
+    margin: 0; /* Remove default margin */
 }
 
+/* Container for the search bar */
 .search-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    flex-grow: 1; /* Allow the container to grow */
 }
 
+/* Search bar input styling */
 .search-bar {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
+    width: 100%; /* Full width */
+    max-width: 500px; /* Maximum width */
+    padding: 10px; /* Padding inside the input */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
 }
 
+/* Search button styling */
 .search-button {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f2f2f2;
-    cursor: pointer;
-    margin-left: 5px;
+    padding: 10px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #f2f2f2; /* Light background color */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 5px; /* Space to the left of the button */
 }
 
+/* Container for the navigation bar */
 .navbar {
-    overflow: hidden;
-    background-color: #333;
-    padding: 10px 0;
+    overflow: hidden; /* Hide overflow */
+    background-color: #333; /* Dark background color */
+    padding: 10px 0; /* Padding top and bottom */
 }
 
+/* Navigation bar link styling */
 .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    float: left; /* Float links to the left */
+    display: block; /* Display as block elements */
+    color: #f2f2f2; /* Light text color */
+    text-align: center; /* Center text */
+    padding: 14px 16px; /* Padding inside the links */
+    text-decoration: none; /* Remove underline */
 }
 
+/* Navigation bar link hover effect */
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #ddd; /* Light background color on hover */
+    color: black; /* Dark text color on hover */
 }
 
+/* Search input in the navigation bar */
 .navbar input[type="text"] {
-    float: left;
-    padding: 14px 16px;
-    margin-left: 10px;
-    border: none;
-    border-radius: 4px;
+    float: left; /* Float input to the left */
+    padding: 14px 16px; /* Padding inside the input */
+    margin-left: 10px; /* Space to the left of the input */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
 }
 
+/* Container for the slideshow */
 .slideshow-container {
-    position: relative;
-    max-width: 100PX;
-    margin: auto;
+    position: relative; /* Position relative to parent */
+    max-width: 100%; /* Full width */
+    margin: auto; /* Center the container */
+    height: 300px; /* Full height */
+    overflow: hidden; /* Hide overflow */
 }
 
+/* Individual slides in the slideshow */
 .mySlides {
-    display: none;
+    display: none; /* Hide slides by default */
+    height: 100%; /* Full height */
+}
+.mySlides img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the entire slide */
 }
 
+/* Fade animation for the slideshow */
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+    animation-name: fade; /* Name of the animation */
+    animation-duration: 1.5s; /* Duration of the animation */
 }
 
+/* Keyframes for the fade animation */
 @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+    from {opacity: .4} /* Start with lower opacity */
+    to {opacity: 1} /* End with full opacity */
 }
