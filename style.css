@@ -95,7 +95,7 @@
 .slideshow-container {
     position: relative; /* Position relative to parent */
     max-width: 100%; /* Full width */
-    height: 300px; /* Set height */
+    height: 900px; /* Set height */
     overflow: hidden; /* Hide overflow */
 }
 
