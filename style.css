@@ -96,7 +96,7 @@
     position: relative; /* Position relative to parent */
     max-width: 100%; /* Full width */
     margin: auto; /* Center the container */
-    height: 300px; /* Full height */
+    height: 300px; /* Set height */
     overflow: hidden; /* Hide overflow */
 }
 
@@ -105,6 +105,8 @@
     display: none; /* Hide slides by default */
     height: 100%; /* Full height */
 }
+
+/* Image styling within slides */
 .mySlides img {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
