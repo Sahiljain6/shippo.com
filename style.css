@@ -38,6 +38,8 @@
     align-items: center; /* Center items vertically */
     justify-content: center; /* Center items horizontally */
     flex-grow: 1; /* Allow the container to grow */
+    margin-left: auto;
+    margin-right:10px;
 }
 
 /* Search bar input styling */
@@ -95,7 +97,7 @@
 .slideshow-container {
     position: relative; /* Position relative to parent */
     max-width: 100%; /* Full width */
-    height: 900px; /* Set height */
+    height: 500px; /* Set height */
     overflow: hidden; /* Hide overflow */
 }
 
