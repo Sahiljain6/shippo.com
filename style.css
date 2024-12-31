@@ -95,7 +95,6 @@
 .slideshow-container {
     position: relative; /* Position relative to parent */
     max-width: 100%; /* Full width */
-    margin: auto; /* Center the container */
     height: 300px; /* Set height */
     overflow: hidden; /* Hide overflow */
 }
@@ -110,7 +109,8 @@
 .mySlides img {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    object-fit: cover; /* Cover the entire slide */
+    object-fit: content; /* ensure the whole image fits within the container*/
+    background-colour:#fff;
 }
 
 /* Fade animation for the slideshow */
