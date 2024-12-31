@@ -95,6 +95,7 @@
 .slideshow-container {
     position: relative; /* Position relative to parent */
     max-width: 100%; /* Full width */
+    margin: auto; /* Center the container */
     height: 300px; /* Set height */
     overflow: hidden; /* Hide overflow */
 }
@@ -109,8 +110,7 @@
 .mySlides img {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    object-fit: contain; /* Cover the entire slide */
-    bacground-color: #fff;
+    object-fit: cover; /* Cover the entire slide */
 }
 
 /* Fade animation for the slideshow */
@@ -123,4 +123,31 @@
 @keyframes fade {
     from {opacity: .4} /* Start with lower opacity */
     to {opacity: 1} /* End with full opacity */
+}
+
+/* Next and previous buttons */
+.prev, .next {
+    cursor: pointer; /* Pointer cursor on hover */
+    position: absolute; /* Position absolute */
+    top: 50%; /* Center vertically */
+    width: auto; /* Auto width */
+    padding: 16px; /* Padding inside the buttons */
+    margin-top: -22px; /* Negative margin to center */
+    color: white; /* White text color */
+    font-weight: bold; /* Bold text */
+    font-size: 18px; /* Font size */
+    transition: 0.6s ease; /* Smooth transition */
+    border-radius: 0 3px 3px 0; /* Rounded corners */
+    user-select: none; /* Disable text selection */
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0; /* Align to the right */
+    border-radius: 3px 0 0 3px; /* Rounded corners */
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8); /* Semi-transparent background */
 }
