@@ -36,16 +36,14 @@
 .search-container {
     display: flex; /* Use flexbox layout */
     align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
+    justify-content: flex-end; /* Align items to the right */
     flex-grow: 1; /* Allow the container to grow */
-    margin-left: auto;
-    margin-right:10px;
 }
 
 /* Search bar input styling */
 .search-bar {
     width: 100%; /* Full width */
-    max-width: 500px; /* Maximum width */
+    max-width: 600px; /* Increased maximum width */
     padding: 10px; /* Padding inside the input */
     border: none; /* No border */
     border-radius: 4px; /* Rounded corners */
@@ -111,8 +109,7 @@
 .mySlides img {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    object-fit: content; /* ensure the whole image fits within the container*/
-    background-colour:#fff;
+    object-fit: contain; /* Maintain aspect ratio */
 }
 
 /* Fade animation for the slideshow */
@@ -153,37 +150,56 @@
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8); /* Semi-transparent background */
 }
-.login-container{
-    body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        .login-container {
-            text-align: center;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        }
-        input, button {
-            width: 90%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            background: #4caf50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #45a049;
-        }
+
+/* Container for the login form */
+.login-container {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Light background color */
+}
+
+/* Login form styling */
+.login-form {
+    background-color: white; /* White background */
+    padding: 20px; /* Padding around the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Login form heading styling */
+.login-form h2 {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Login form label styling */
+.login-form label {
+    display: block; /* Display as block elements */
+    margin-bottom: 5px; /* Space below the labels */
+}
+
+/* Login form input styling */
+.login-form input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the inputs */
+    margin-bottom: 10px; /* Space below the inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Login form button styling */
+.login-form button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the button */
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Login form button hover effect */
+.login-form button:hover {
+    background-color: #555; /* Slightly lighter background on hover */
 }
