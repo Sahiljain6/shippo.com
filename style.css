@@ -110,7 +110,7 @@
 .mySlides img {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    object-fit: cover; /* Cover the entire slide */
+    object-fit: content; /* Cover the entire slide */
 }
 
 /* Fade animation for the slideshow */
